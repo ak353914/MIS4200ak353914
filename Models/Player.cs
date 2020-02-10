@@ -13,6 +13,7 @@ namespace MIS4200ak353914.Models
         public string year { get; set; }
         public string salary { get; set; }
         public string gamesPlayed { get; set; }
+        public ICollection<PlayerSport> PlayerSport { get; set; }
         public int teamID { get; set; }
         public virtual Team Team { get; set; }
     }
